@@ -1,0 +1,16 @@
+.nav_container {
+  background-color: #ffffff33;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 90px;
+  font-weight: bold;
+  font-family: roboto;
+}
+.nav_logo,
+.nav_score_section {
+  display: flex;
+}
+.nav_score_section {
+  gap: 20px;
+}

@@ -1,0 +1,25 @@
+.emoji_game_page {
+  background-image: linear-gradient(#9796f0, #fbc7d4);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.emoji_card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 600px;
+  gap: 10px;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+}
+.win_loss_wrapper {
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+  background-color: #ffffff33;
+  place-self: center;
+  padding: 10px;
+  margin-top: 90px;
+}

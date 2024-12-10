@@ -1,0 +1,35 @@
+.win_lose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  row-gap: 10px;
+  padding: 10px;
+  width: 500px;
+}
+.win_lose_image {
+  height: 300px;
+}
+.score {
+  color: #6a59ff;
+  font-weight: bold;
+  font-size: 23px;
+}
+.result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.play_again_button {
+  background-color: #ffce27;
+  border-radius: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  padding: 9px;
+  border: none;
+  color: black;
+}
