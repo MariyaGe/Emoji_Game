@@ -1,16 +1,3 @@
-/* 
-Quick Tip 
-
-- Use the below function in the EmojiGame Component to shuffle the emojisList every time when an emoji is clicked.
-
-const shuffledEmojisList = () => {
-  const {emojisList} = this.props
-  return emojisList.sort(() => Math.random() - 0.5)
-}
-
-*/
-
-// Write your code here.
 import React, {useState} from 'react'
 import NavBar from '../NavBar'
 import EmojiCard from '../EmojiCard'
@@ -24,25 +11,21 @@ const EmojiGame = ({emojisList}) => {
   const [totalEmojisList, setTotalEmojisList] = useState(emojisList)
   const [selectedEmojis, setSelectedEmojis] = useState([])
   const [gameStatus, setGameStatus] = useState()
-  const imageOnclickHandler = id => {
-    console.log(id)
 
+  const imageOnclickHandler = id => {
     setSelectedEmojis(prevList => {
       if (prevList.includes(id)) {
         setDisplayScore(false)
         setGameStatus('LOSS')
         setTopScore(prevTopScore => Math.max(score, prevTopScore))
-
         return prevList
       }
-
       if (prevList.length === 11) {
         console.log('11')
         setGameStatus('WIN')
         setScore(prevScore => prevScore + 1)
         setTopScore(prevTopScore => Math.max(score, prevTopScore))
         setDisplayScore(false)
-
         return prevList
       }
 

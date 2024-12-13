@@ -2,7 +2,6 @@ import './index.css'
 
 const EmojiCard = ({emoji, imageOnclickHandler}) => {
   const emojiClickHandler = () => {
-    console.log(emoji)
     imageOnclickHandler(emoji.id)
   }
   return (

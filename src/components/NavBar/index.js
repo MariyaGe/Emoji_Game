@@ -1,7 +1,6 @@
 import './index.css'
 
 const NavBar = ({topScore, score, displayScore}) => {
-  console.log(displayScore)
   return (
     <div className="nav_container">
       <div className="nav_logo">
